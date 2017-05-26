@@ -20,8 +20,8 @@ To install the project on your local development environment follow these steps.
 
 ### Prepare CloudStreams Servers
 
-1. In Software AG Designer open Window > Preferences
-2. Navigate to Software AG > CloudStreams Servers
+1. In Software AG Designer open ```Window > Preferences```
+2. Navigate to ```Software AG > CloudStreams Servers```
 3. Add your local Integration Server. If there is already an entry make sure username and password are correct by clicking the Test button.
 
 ### Import CloudStreams Provider Project
