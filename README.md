@@ -38,7 +38,7 @@ To install the project on your local development environment follow these steps.
 ### Import Integration Server packages
 The CloudStreams Provider Project does not contain neccessary doctypes.
 
-1. Copy GoogleMaps.zip and GoogleMapsTests.zip to ```<SAG Installation>/IntegrationServer/instances/<instance>/replicate/inbound```
+1. Copy GoogleMaps.zip and GoogleMapsTests.zip to ```<install_dir>/IntegrationServer/instances/<instance>/replicate/inbound```
 2. Open Integration Server Administration in your browser
 3. Install both packages with ```Install Inbound Releases``` in Package Management
 
