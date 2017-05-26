@@ -48,7 +48,7 @@ To access Google APIs an API key is neccessary. Generate your API key here: http
 
 1. Open Integration Server Administration in your browser.
 2. Navigate to ```Solutions > CloudStreams > Providers > GoogleMaps```.
-3. Select ```Google Maps``` from the Connector List.
+3. Select ```GoogleMaps``` from the Connector List.
 
 You will find two (disabled) connections: GoogleMapsTest:apiConnection and GoogleMapsTest:mapsConnection. You need to modify both connections:
 1. Click the Edit button of the connection.
