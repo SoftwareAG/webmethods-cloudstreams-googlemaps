@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>GoogleMaps</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>providerNature</nature>
+		<nature>com.softwareag.cloudstreams.connectorplugin.ui.view.connectornature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.softwareag.com/cloudstreams/metadata/handler/model">
+    <connections>
+        <connection type="sagcloud" name="Connection1" displayName="Connection1">
+            <groups>
+                <group type="connection" name="connection" displayName="connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field defaultValue="http://127.0.0.1" name="cn.providerUrl" displayName="Server URL"/>
+                        <field defaultValue="30000" name="cn.connectTimeout" displayName="Connection TimeOut"/>
+                        <field defaultValue="30000" name="cn.readTimeout" displayName="Socket Read Timeout"/>
+                        <field defaultValue="false" name="cn.socketStaleCheck" displayName="Use Stale Checking"/>
+                        <field defaultValue="1" name="cn.retryCount" displayName="Connection Retry Count"/>
+                        <field defaultValue="false" name="cn.retryIfRequestSentOk" displayName="Retry on Response Failure"/>
+                        <field defaultValue="false" name="cn.tcpNoDelay" displayName="Use TCP NoDelay"/>
+                        <field defaultValue="-1" name="cn.socketLinger" displayName="Socket Linger"/>
+                        <field defaultValue="8192" name="cn.sockBuffSize" displayName="Socket Buffer Size"/>
+                        <field defaultValue="false" name="cn.reuseAddr" displayName="Socket Reuse Address"/>
+                        <field defaultValue="org.apache.http.conn.ssl.StrictHostnameVerifier" name="cn.hostnameVerifier" displayName="Hostname verifier"/>
+                    </fields>
+                </group>
+                <group type="custom" name="custom" displayName="Custom1">
+                    <description>Define any custom configurations specific to the SaaS provider.</description>
+                    <fields>
+                        <field defaultValue="" name="cx.APIKey" displayName="APIKey"/>
+                    </fields>
+                </group>
+            </groups>
+            <start/>
+            <stop/>
+        </connection>
+    </connections>
+</rest-connector>

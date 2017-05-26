@@ -1,0 +1,12 @@
+Connector-Bundle-Vendor: Software AG
+Connector-Bundle-Version: 1.0
+Manifest-Version: 1.2
+Connector-Descriptor-File: com.softwareag.googleMaps.xml
+Connector-Key: com.softwareag.googleMaps
+Connector-Version: 0.1
+Connector-Provider-Package: GoogleMaps
+Connector-State: Enabled
+Connector-Handler: com.softwareag.cloudstreams.metadata.handler.rest.RestConnectorMetadataHandler
+Connector-Name: Google Maps
+Connector-Group: GoogleMaps
+Created-By: 9.12

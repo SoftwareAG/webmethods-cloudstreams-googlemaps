@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ConnectorList xmlns:ns2="http://cloudstreams.com/connector">
+    <Connector>
+        <name>Google Maps</name>
+        <uuid>com.softwareag.googleMaps</uuid>
+        <version>0.1</version>
+    </Connector>
+    <ProviderPackage>GoogleMaps</ProviderPackage>
+    <Description>CloudStreams Provider for Google Maps</Description>
+    <Publisher>Software AG</Publisher>
+</ns2:ConnectorList>

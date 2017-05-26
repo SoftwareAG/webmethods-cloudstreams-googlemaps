@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <value name="interface">wmgoogle.maps.doctypes</value>
+    <value name="package">GoogleMaps</value>
+    <array name="nodeList" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:geolocationResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:geocodeResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:elevationResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:wifiAccessPoints</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:cellTowers</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:geolocationRequest</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:distanceMatrixResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:directionsResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="node_nsName">wmgoogle.maps.doctypes:timezoneResponse</value>
+        <number name="LOCK_STATUS" type="java.lang.Integer">3</number>
+        <value name="node_pkg">GoogleMaps</value>
+        <idataportable name="node_type" javaclass="com.wm.lang.ns.NSType">
+          <value name="type_name">record</value>
+          <value name="subtype_name">unknown</value>
+        </idataportable>
+        <null name="eventDescription"/>
+        <jboolean name="field_is_xml_content">false</jboolean>
+        <number name="role" type="java.lang.Byte">0</number>
+        <jboolean name="NotificationDocument">false</jboolean>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>

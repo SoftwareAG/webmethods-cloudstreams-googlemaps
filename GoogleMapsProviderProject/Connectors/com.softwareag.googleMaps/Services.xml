@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.softwareag.com/cloudstreams/metadata/handler/model">
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="directions" displayName="directions">
+            <description>The Google Maps Directions API is a service that calculates directions between locations. You can search for directions for several modes of transportation, including transit, driving, walking, or cycling.&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/directions</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map isRequired="true" isFixed="true" context="IN" name="APIKey" displayName="APIKey">
+                        <source type="IDATA">cx.APIKey</source>
+                        <target type="PARAMETER">key</target>
+                    </map>
+                </mappings>
+                <resource method="GET" path="/directions/json" name="directions" displayName="directions">
+                    <parameters>
+                        <parameter name="origin" isRequired="true" style="QUERYSTRING_PARAM">
+                            <description>origin</description>
+                        </parameter>
+                        <parameter name="destination" isRequired="true" style="QUERYSTRING_PARAM">
+                            <description>destination</description>
+                        </parameter>
+                        <parameter name="mode" isRequired="false" style="QUERYSTRING_PARAM">
+                            <description>Means of transport</description>
+                        </parameter>
+                        <parameter name="waypoints" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="alternatives" isRequired="false" style="QUERYSTRING_PARAM">
+                            <description>True, to return alternatives</description>
+                        </parameter>
+                        <parameter name="avoid" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="language" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="units" isRequired="false" style="QUERYSTRING_PARAM" defaultValue="metric"/>
+                        <parameter name="region" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="arrival_time" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="departure_time" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="traffic_model" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="transit_mode" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="transit_routing_preference" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="directions" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:directionsResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="distanceMatrix" displayName="distanceMatrix">
+            <description>The Google Maps Distance Matrix API is a service that provides travel distance and time for a matrix of origins and destinations, based on the recommended route between start and end points.&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/distance-matrix</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map isRequired="true" isFixed="true" context="IN" name="APIKey" displayName="APIKey">
+                        <source type="IDATA">cx.APIKey</source>
+                        <target type="PARAMETER">key</target>
+                    </map>
+                </mappings>
+                <resource method="GET" path="/distancematrix/json" name="distanceMatrix" displayName="distanceMatrix">
+                    <parameters>
+                        <parameter name="origins" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="destinations" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="units" isRequired="false" style="QUERYSTRING_PARAM" defaultValue="metric"/>
+                        <parameter name="mode" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="language" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="avoid" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="arrival_time" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="departure_time" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="traffic_model" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="transit_mode" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="transit_routing_preference" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="distanceMatrix" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:distanceMatrixResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="elevation" displayName="elevation">
+            <description>The Google Maps Elevation API provides elevation data for all locations on the surface of the earth, including depth locations on the ocean floor (which return negative values).&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/elevation</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map isRequired="true" isFixed="true" context="IN" name="APIKey" displayName="APIKey">
+                        <source type="IDATA">cx.APIKey</source>
+                        <target type="PARAMETER">key</target>
+                    </map>
+                </mappings>
+                <resource method="GET" path="/elevation/json" name="elevationByLocations" displayName="elevationByLocations">
+                    <description>requests constructed as a URL string, using latitude/longitude coordinates to identify the locations</description>
+                    <parameters>
+                        <parameter name="locations" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="elevation" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:elevationResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+                <resource method="GET" path="/elevation/json" name="elevationByPath" displayName="elevationByPath">
+                    <description>requests constructed with path vertices</description>
+                    <parameters>
+                        <parameter name="path" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="samples" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="elevation" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:elevationResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="geocode" displayName="geocode">
+            <description>The Google Maps Geocoding API is a service that provides geocoding and reverse geocoding of addresses.&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/geocoding</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map isRequired="true" isFixed="true" context="IN" name="APIKey" displayName="APIKey">
+                        <source type="IDATA">cx.APIKey</source>
+                        <target type="PARAMETER">key</target>
+                    </map>
+                </mappings>
+                <resource method="GET" path="/geocode/json" name="geocode" displayName="geocode">
+                    <parameters>
+                        <parameter name="address" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="bounds" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="language" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="region" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="components" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="geocode" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:geocodeResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="gelocation" displayName="gelocation">
+            <description>The Google Maps Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect.&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/geolocation</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map isRequired="true" isFixed="true" context="IN" name="APIKey" displayName="APIKey">
+                        <source type="IDATA">cx.APIKey</source>
+                        <target type="PARAMETER">key</target>
+                    </map>
+                </mappings>
+                <resource method="POST" path="/geolocation/v1/geolocate" name="geolocation" displayName="geolocation">
+                    <parameters>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <request name="geolocation" messageFormatterType="application/json" builderType="application/octet+idataoref" documentRef="wmgoogle.maps.doctypes:geolocationRequest" excludeRoot="false"/>
+                    <responses>
+                        <response name="geolocation" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:geolocationResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="timezone" displayName="timezone">
+            <description>The Google Maps Time Zone API provides time offset data for locations on the surface of the earth. You request the time zone information for a specific latitude/longitude pair and date. The API returns the name of that time zone, the time offset from UTC, and the daylight savings offset.&#xD;
+&#xD;
+https://developers.google.com/maps/documentation/timezone</description>
+            <documentModel packageName="GoogleMaps" nsName="wmgoogle.maps.doctypes" useInlineModel="false"/>
+            <resources>
+                <resource method="GET" path="/timezone/json" name="timezone" displayName="timezone">
+                    <parameters>
+                        <parameter name="location" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="timestamp" isRequired="true" style="QUERYSTRING_PARAM"/>
+                        <parameter name="key" isRequired="false" style="QUERYSTRING_PARAM"/>
+                        <parameter name="language" isRequired="false" style="QUERYSTRING_PARAM"/>
+                    </parameters>
+                    <responses>
+                        <response name="timezone" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="wmgoogle.maps.doctypes:timezoneResponse" excludeRoot="true"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>

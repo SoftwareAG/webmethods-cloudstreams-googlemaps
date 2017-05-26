@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <value name="interface">GoogleMaps</value>
+    <value name="package">GoogleMaps</value>
+    <null name="nodeList"/>
+  </record>
+</IDataXMLCoder>
