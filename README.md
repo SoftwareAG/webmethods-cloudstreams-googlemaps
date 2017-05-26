@@ -1,11 +1,11 @@
 # webMethods CloudStreams Provider for Google Maps APIs
 This project provides a sample webMethods CloudStreams Provider Project for Google Maps. The following APIs are available:
-* directions: The Google Maps Directions API is a service that calculates directions between locations. https://developers.google.com/maps/documentation/directions
-* distance matrix: The Google Maps Distance Matrix API is a service that provides travel distance and time for a matrix of origins and destinations, based on the recommended route between start and end points. https://developers.google.com/maps/documentation/distance-matrix
-* elevation: The Google Maps Elevation API provides elevation data for all locations on the surface of the earth, including depth locations on the ocean floor (which return negative values). https://developers.google.com/maps/documentation/elevation
-* geocode: The Google Maps Geocoding API is a service that provides geocoding and reverse geocoding of addresses. https://developers.google.com/maps/documentation/geocoding
-* gelocation: The Google Maps Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. https://developers.google.com/maps/documentation/geolocation
-* timezone:The Google Maps Time Zone API provides time offset data for locations on the surface of the earth. https://developers.google.com/maps/documentation/timezone
+* **Directions:** The Google Maps Directions API is a service that calculates directions between locations. https://developers.google.com/maps/documentation/directions
+* **Distance matrix**: The Google Maps Distance Matrix API is a service that provides travel distance and time for a matrix of origins and destinations, based on the recommended route between start and end points. https://developers.google.com/maps/documentation/distance-matrix
+* **Elevation**: The Google Maps Elevation API provides elevation data for all locations on the surface of the earth, including depth locations on the ocean floor (which return negative values). https://developers.google.com/maps/documentation/elevation
+* **Geocode**: The Google Maps Geocoding API is a service that provides geocoding and reverse geocoding of addresses. https://developers.google.com/maps/documentation/geocoding
+* **Gelocation**: The Google Maps Geolocation API returns a location and accuracy radius based on information about cell towers and WiFi nodes that the mobile client can detect. https://developers.google.com/maps/documentation/geolocation
+* **Timezone**:The Google Maps Time Zone API provides time offset data for locations on the surface of the earth. https://developers.google.com/maps/documentation/timezone
 
 ## Requirements
 
