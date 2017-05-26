@@ -18,7 +18,7 @@ The project was developed and tested on the following installation:
 
 To install the project on your local development environment follow these steps.
 
-### Prepare CloudStreams Servers
+### Prepare CloudStreams connection
 
 1. In Software AG Designer open ```Window > Preferences```.
 2. Navigate to ```Software AG > CloudStreams Servers```.
