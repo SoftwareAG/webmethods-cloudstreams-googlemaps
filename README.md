@@ -1,4 +1,4 @@
-# webMethods CloudStreams Provider for Google Maps APIs
+# webMethods CloudStreams Provider for Google Maps
 This project provides a sample webMethods CloudStreams Provider Project for Google Maps. The following APIs are available:
 * **Directions:** The Google Maps Directions API is a service that calculates directions between locations. https://developers.google.com/maps/documentation/directions
 * **Distance matrix**: The Google Maps Distance Matrix API is a service that provides travel distance and time for a matrix of origins and destinations, based on the recommended route between start and end points. https://developers.google.com/maps/documentation/distance-matrix
