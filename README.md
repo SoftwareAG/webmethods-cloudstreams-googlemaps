@@ -42,6 +42,19 @@ The CloudStreams Provider Project does not contain neccessary doctypes.
 2. Open Integration Server Administration in your browser
 3. Install both packages with ```Install Inbound Releases``` in Package Management
 
+### Add Google API Key and activate connections
+
+To access Google APIs an API key is neccessary. Generate your API key here: https://console.developers.google.com/apis/credentials. Make sure all Google Maps APIs are enabled in your library by clickin and enabling each of them (https://console.developers.google.com/apis/library).
+
+1. Open Integration Server Administration in your browser
+2. Navigate to ```Solutions > CloudStreams > Providers > Google Maps```
+3. Select ```Google Maps``` from the Connector List
+
+You will find two (disabled) connections: GoogleMapsTest:apiConnection and GoogleMapsTest:mapsConnection. You need to modify both connections:
+1. Click the Edit button of the connection
+2. Enter your Google API key in APIKey-field and save the changes.
+3. Enable the connection.
+
 ______________________
 These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
 _____________
