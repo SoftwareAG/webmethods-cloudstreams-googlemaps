@@ -44,7 +44,7 @@ The CloudStreams Provider Project does not contain neccessary doctypes.
 
 ### Add Google API Key and activate connections
 
-To access Google APIs an API key is neccessary. Generate your API key here: https://console.developers.google.com/apis/credentials. Make sure all Google Maps APIs are enabled in your library by clickin and enabling each of them (https://console.developers.google.com/apis/library).
+To access Google APIs an API key is neccessary. Generate your API key here: https://console.developers.google.com/apis/credentials. Make sure all Google Maps APIs are enabled in your library by clicking and enabling each of them (https://console.developers.google.com/apis/library).
 
 1. Open Integration Server Administration in your browser
 2. Navigate to ```Solutions > CloudStreams > Providers > Google Maps```
